@@ -102,7 +102,7 @@ module.exports = function (grunt) {
 		},
 		connect: {
 			options: {
-				hostname: 'localhost'
+				hostname: '136.177.31.155'
 			},
 			rules: [
 				{
