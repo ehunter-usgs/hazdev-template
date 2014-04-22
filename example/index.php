@@ -214,6 +214,44 @@ deserunt mollit anim id est laborum.
 
 
 
+
+
+<h2 class="underline">Nested Headers</h2>
+
+<p>
+	This is an example of what happens when you nest headers inside
+	&lt;section&gt; tags.
+</p>
+
+<section>
+	<h5>h5 Header</h5>
+	<section>
+		<h4>h4 Header</h4>
+		<section>
+			<h3>h3 Header</h3>
+			<section>
+				<h2>h2 Header</h2>
+				<section>
+					<h1>h1 Header</h1>
+				</section>
+			</section>
+		</section>
+	</section>
+</section>
+
+<section>
+	<h3>h3 Header</h3>
+	<section>
+		<h1>h1 Header</h1>
+		<h2>h2 Header</h2>
+		<section>
+			
+		</section>
+	</section>
+
+</section>
+
+
 <h2 class="underline">Headers</h2>
 
 
