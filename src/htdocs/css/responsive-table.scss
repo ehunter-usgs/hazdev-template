@@ -39,17 +39,20 @@ table.tabular {
 	overflow-y: hidden;
 	overflow-x: auto;
 
+
 	th {
 		color: $th_color;
-		background-color: $th_background_color;
+		//background-color: $th_background_color;
+		background-color: rgba(0,0,0,0.05);
 		font-weight:bold;
-		text-shadow: 1px 1px 0px #fff;
+		text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
 		text-align: left; /* only necessary for IE */
 	}
 
 	td {
 		color: $th_color;
-		background-color: $td_background_color;
+		//background-color: $td_background_color;
+		background-color: rgba(255,255,255,0.08);
 	}
 
 	th,
@@ -176,4 +179,40 @@ table.responsive {
 			position:static;
 		}
 	}
+}
+
+
+
+
+
+
+
+
+	/*
+
+  You have to remove the background color from:
+
+   - <th>
+   - <td>
+
+  so that the gradient can be seen. I update the colors to
+  have alpha transparency soo that the header had a color and the body
+  wasn't more shadowy than the header. I also added alpha transparency
+  to the text shadow.
+
+  some tables are VERY tall, this would need to be a linear gradient 
+  instead of radial gradient
+
+ */
+
+table.tabular {
+	// Add an indication of hidden (but scrollable) content
+	background:
+		linear-gradient(to right, rgba(255,255,255,1) 30%, rgba(0,0,0,0)),
+		linear-gradient(to left, rgba(255,255,255,1) 30%, rgba(0,0,0,0)) right,
+		linear-gradient(to right, rgba(0,0,0,.15), transparent 70%),
+		linear-gradient(to left, rgba(0,0,0,.15), transparent 70%) right;
+	background-repeat: no-repeat;
+	background-size: 40px 100%, 40px 100%, 10px 100%, 10px 100%;
+	background-attachment: local, local, scroll, scroll;
 }
