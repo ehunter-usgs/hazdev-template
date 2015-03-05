@@ -12,8 +12,6 @@
 ?>
 
 
-
-<h2>Text-level Semantics</h2>
 <p>
 	The following list gives you a short overview of the most commonly used text-level semantics and how to utilize them.
 </p>

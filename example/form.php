@@ -12,10 +12,6 @@ if (!isset($TEMPLATE)) {
 					height: 10em;
 				}
 
-				.vertical > button {
-					margin: 2em 0 0;
-				}
-
 				.sortExample,
 				.searchExample {
 					margin: 1em 0 0;

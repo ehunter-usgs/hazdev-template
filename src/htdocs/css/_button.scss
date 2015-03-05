@@ -15,7 +15,8 @@ button {
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%,
 			rgba(0,0,0,0.05) 100%);
 	vertical-align:top;
-	font-family:'helvetica neue', arial, sans-serif;
+	font-family:helvetica, arial, sans-serif;
+	font-weight:300;
 
 	&:hover {
 		background-image: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,
@@ -107,14 +108,12 @@ button {
 
 	&.cancel:after {
 		content:'x';
-		font-weight:bold;
 	}
 }
 
 .button-group {
 	padding:0;
-	margin:0;
-
+	margin:1em 0 0;
 
 	> button {
 		margin:0 0 0 -1px;

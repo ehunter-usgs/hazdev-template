@@ -1,4 +1,4 @@
-:root {
+html {
 	font-size: 10px;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
@@ -7,37 +7,66 @@
 body {
 	font-size:1.6rem;
 	line-height:1.5;
-	font-family:'helvetica neue', arial, sans-serif;
+	font-family:helvetica, arial, sans-serif;
+	font-weight: 300;
+	color:#444;
+	//letter-spacing: -0.01em;
 }
 
 // apply same margin for each header for consistency
 h1, h2, h3, h4, h5, h6 {
-	margin:2.4rem 0 0; /* 1.5em of base font-size */
+	margin:2.4rem 0 0; /* 1.5x base font-size */
 	line-height:1.2;
 	color:#333;
-	font-weight: normal;
+	font-weight: 500;
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 1.875em; // 30px
 }
 
 h2 {
-	font-size: 1.625em;
+	font-size: 1.5em; // 24px
 }
 
 h3 {
-	font-size: 1.375em;
+	font-size: 1.3125em; // 21px
 }
 
 h4 {
-	font-size: 1.125em;
+	font-size: 1.125em; // 18px
 }
 
 h5 {
-	font-size: 1em;
+	font-size: 1em; // 16px
+	font-weight: bold;
 }
 
 h6 {
-	font-size: 0.875em;
+	font-size: 0.8125em; // 13px
+	font-weight: bold;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+	margin: 0.5em 0 0;
+}
+
+
+.docs {
+
+	h1, h2, h3, h4, h5, h6 {
+		margin:3.2rem 0 0; /* 2x base font-size */
+	}
+
+	h2::after {
+		display: block;
+		content: '';
+		border-bottom: 1px solid #ddd;
+		margin: 0.6rem 0 0;
+	}
 }
