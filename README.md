@@ -1,4 +1,4 @@
-hazdev-template
+lfdksjflkds`:`azdev-template
 ===============
 
 Lightweight php template framework
