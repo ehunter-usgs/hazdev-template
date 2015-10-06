@@ -28,6 +28,8 @@
       </style>
 
       <link rel="stylesheet" href="/theme/css/alert.css"/>
+      <link rel="stylesheet" ' .
+        'href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     ';
 
     include 'template.inc.php';
