@@ -15,64 +15,63 @@
   }
 }
 
+.error,
+.info,
+.success,
+.warning {
+  padding: 1em 2em;
+
+  &:before {
+    color: rgba(0, 0, 0, 0.05);
+    font-family: 'Material Icons';
+    font-size: 5em;
+    left: -1.2rem;
+    line-height: 1;
+    position: absolute;
+    top: -1.3rem;
+  }
+}
+
 .info {
   background-color: #E8F5FA;
+
+  /* info */
+  &:before {
+    content: '\e88e';
+  }
 }
 
 .success {
   background-color: #E5FCDE;
+
+  /* check circle */
+  &:before {
+    content: '\e86c';
+  }
 }
 
 .warning {
   background-color: #FDF7DC;
 
+  /* warning */
+  &:before {
+    content: '\e002';
+  }
 }
 
 .error {
   background-color: #F9DEDE;
+
+  /* remove circle */
+  &:before {
+    content: '\e15c';
+  }
 }
 
+.remove-icon {
+  padding: 1em;
 
-@media screen and (min-width: 768px) {
-
-  .error,
-  .info,
-  .success,
-  .warning {
-    padding: 2em 3em;
-
-    &:before {
-      color: rgba(0,0,0,0.03);
-      font-family: 'Material Icons';
-      font-size: 7em;
-      left: -1rem;
-      line-height: 1;
-      position: absolute;
-      top: -1rem;
-    }
-  }
-
-  .info:before {
-    content: '\e88f';
-  }
-
-  .success:before {
-    content: '\e5ca';
-  }
-
-  .warning:before {
-    content: '\e001';
-  }
-
-  .error:before {
-    content: '\e001';
-  }
-
-  .remove-icon {
-    padding: 1em;
-
-    &:before {
-      content: '';
-    }
+  &:before {
+    content: '';
   }
 }
