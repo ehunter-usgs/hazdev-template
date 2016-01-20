@@ -16,6 +16,13 @@ echo navGroup(navItem('/theme/index.php', 'The Template'),
     navItem('/theme/typography.php', 'Typography')
   );
 
-echo navItem('/theme/content.php', 'Content Styles');
+echo navGroup(navItem('/theme/index.html', 'Second Navigation'),
+    navItem('/theme/alert.html', 'Alerts') .
+    navItem('/theme/button.html', 'Buttons') .
+    navItem('/theme/figcaption.html', 'Figure Caption')
+  );
 
+echo navItem('/theme/content.php', 'Content Styles');
 echo navItem('/theme/cooperator.php', 'Cooperator Logos');
+
+

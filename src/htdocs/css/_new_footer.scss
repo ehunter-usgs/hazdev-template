@@ -1,0 +1,178 @@
+/* reset <a> tag styles */
+.site-sectionnav {
+  a {
+    color: $secondary-text-color;
+    display: block;
+    padding: calc($spacing * 2/3) $spacing;
+    text-decoration: none;
+
+    &:visited {
+      color: $secondary-text-color;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  strong {
+    font-weight: normal;
+  }
+}
+
+
+/* style the section navigation */
+.site-footer {
+  padding: $spacing;
+}
+
+.site-sectionnav {
+
+  > section {
+
+    &:after {
+      content: '';
+      display:block;
+      height: 1em;
+    }
+
+    > header {
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 0.5em;
+
+      > a {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+
+  .selected {
+    background: #ededed;
+  }
+
+  a:hover {
+    background: #f8f8f8;
+  }
+
+  > a {
+    border-top: 1px solid #ddd;
+
+    &:last-child {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* search form */
+
+.site-search {
+  display: block;
+  margin-top: $spacing;
+  position: relative;
+
+  >[type="search"] {
+    appearance: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  > label {
+    display: block;
+    float: left;
+    font-size: smaller;
+    margin-right: $spacing;
+  }
+
+  > button {
+    clear: both;
+    display: block;
+    margin: $spacing 0 0 0;
+  }
+}
+
+
+/* site nav */
+
+.site-sitenav {
+  background-color: $primary;
+  overflow: visible;
+
+  > a,
+  > strong {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: $primary-text-color;
+    display: block;
+    font-weight: normal;
+    padding: calc($spacing * 2/3) $spacing;
+    text-decoration: none;
+    text-shadow: 0 0 2px #000;
+    transition: background .25s ease-out;
+
+    &:visited {
+      color: $primary-text-color;
+    }
+
+    &:hover {
+      background: $primary-darker;
+      color: $primary-text-color;
+    }
+  }
+
+  > strong,
+  > .current-page,
+  > strong:hover,
+  > .current-page:hover {
+    background-color: $primary-darker;
+    color: $primary-text-color;
+  }
+}
+
+
+/* Site Footer */
+
+.site-commonnav {
+  border-top: 1px solid $secondary;
+  clear: both;
+  font-size: smaller;
+  padding: 1rem;
+  text-align: center;
+
+  > a {
+    color: $primary-lighter;
+    display: inline-block;
+    margin: 0 $spacing 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@media print {
+  .site-sectionnav,
+  .site-search,
+  .site-sitenav,
+  .site-commonnav {
+    display: none;
+  }
+}

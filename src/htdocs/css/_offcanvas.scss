@@ -102,11 +102,3 @@ $offcanvas-transition-time: .3s !default;
     }
   }
 }
-
-
-@media screen and (min-width: $breakpoint-offcanvas) {
-
-  .offcanvas-enabled .offcanvas {
-    padding: 0 $spacing;
-  }
-}
