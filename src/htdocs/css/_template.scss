@@ -1,6 +1,9 @@
 /* include variables */
 @import '_variables.scss';
 
+/* build page layout */
+@import '_layout.scss';
+
 /* include template partials */
 @import '_alert.scss';
 @import '_banner.scss';

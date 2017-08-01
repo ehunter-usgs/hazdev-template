@@ -1,0 +1,28 @@
+$content-width: 1300px !default;
+
+
+header,
+main,
+footer {
+
+  &:after {
+    display: block;
+    content: '';
+    overflow: hidden;
+  }
+}
+
+
+.header-content,
+.banner-content,
+.main-content,
+.footer-content {
+  margin: 0 auto;
+  max-width: $content-width;
+
+  &:after {
+    display: block;
+    content: '';
+    overflow: hidden;
+  }
+}
