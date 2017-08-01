@@ -65,9 +65,8 @@
     /* make banner larger on large screens. */
     background-color: $banner-background-color;
     background-image: url($banner-image);
-    background-position: 186px 0;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: contain;
 
     .banner-content:after {
       background-color: $primary;

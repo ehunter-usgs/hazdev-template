@@ -1,7 +1,7 @@
 $content-width: 1300px !default;
 
-
 header,
+.banner,
 main,
 footer {
 
@@ -11,7 +11,6 @@ footer {
     overflow: hidden;
   }
 }
-
 
 .header-content,
 .banner-content,
@@ -25,4 +24,8 @@ footer {
     content: '';
     overflow: hidden;
   }
+}
+
+.header-content {
+  background-color: rgba(0, 0, 0, 0.2);
 }
