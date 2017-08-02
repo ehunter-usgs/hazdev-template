@@ -133,7 +133,7 @@
 
     if ($SITE_COMMONNAV) {
       echo '<footer class="site-commonnav">' .
-          '<div class="footer-content"' .
+          '<div class="footer-content">' .
             $SITE_COMMONNAV .
           '</div' .
         '</footer>';
