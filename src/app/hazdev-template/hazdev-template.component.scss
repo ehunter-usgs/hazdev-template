@@ -92,10 +92,6 @@ mark {
   padding: 2px 4px;
 }
 
-.mat-button-wrapper {
-  font-weight: 400;
-}
-
 
 /* Grid */
 
@@ -265,4 +261,10 @@ mark {
   .hazdev-site-header > .hazdev-sidenav-toggle {
     display: none;
   }
+}
+
+/*** Angular Material Styles ***/
+a.mat-tab-link {
+  /* keeps tab links from inheriting purple a:visited styles */
+  color: inherit;
 }
