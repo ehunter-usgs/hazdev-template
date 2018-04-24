@@ -1,6 +1,13 @@
 /* Import theming functions */
 @import '~@angular/material/theming';
 
+$custom-typography: mat-typography-config(
+  $font-family: 'Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif'
+);
+
+// Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
+@include angular-material-typography($custom-typography);
+
 /*
 
  Custom palette created using earthquake template colors
