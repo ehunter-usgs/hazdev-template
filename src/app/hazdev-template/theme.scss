@@ -3,18 +3,6 @@
 
 /*
 
- Plus imports for other components in your app.
-
- Include the common styles for Angular Material. We include this here so
- that you only have to load a single css file for Angular Material in your
- app. Be sure that you only ever include this mixin once!
-
-*/
-@include mat-core();
-
-
-/*
-
  Custom palette created using earthquake template colors
   - http://mcg.mbitson.com/#!?mcgpalette0=3d5e80
 
@@ -59,37 +47,24 @@ $earthquake-palette: (
  optionally specify a default, lighter, and darker hue.
 
  */
-$earthquake-app-primary: mat-palette($earthquake-palette, 500, 400, 700);
-$earthquake-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$earthquake-app-primary: mat-palette($earthquake-palette);
+$earthquake-app-accent:  mat-palette($mat-pink);
 
 /*The warn palette is optional (defaults to red). */
-$earthquake-app-warn:    mat-palette($mat-orange, A700, 300, 900);
+$earthquake-app-warn:    mat-palette($mat-orange);
 
 /* Create the theme object (a Sass map containing all of the palettes). */
 $earthquake-app-theme: mat-light-theme($earthquake-app-primary, $earthquake-app-accent, $earthquake-app-warn);
-
-/*
-
- Include theme styles for core and each component used in your app.
- Alternatively, you can import and @include the theme mixins for each
- component that you are using.
-
-*/
-@include angular-material-theme($earthquake-app-theme);
-
-
-
-/*
-
- Site Configuration
-
- */
-
 
 /*
 $earthquake-header-background: mat-color($earthquake-app-primary, darker);
 $earthquake-header-banner-img: none;
 */
 
+/* Main banner color */
+/* TODO, remove this color and just use a darker palette color */
 $earthquake-header-background: #000000;
+
+/* Banner image */
+/* TODO, get a new banner image or remove entirely */
 $earthquake-header-banner-img: url('assets/earthquake/banner.png');
