@@ -1,6 +1,7 @@
 /* Import theming functions */
 @import '~@angular/material/theming';
 
+/* set components to use font-family used by entire site */
 $custom-typography: mat-typography-config(
   $font-family: 'Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif'
 );
